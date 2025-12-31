@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 import LoadingPage from "../components/pages/LoadingPage";
 import Sidebar from "@/components/Sidebar";
 
-const FloatingActions = lazy(() => import("@/components/ui/FloatingWidget"));
+
 const CropImageStudio = lazy(() =>
   import("@/components/common/CropImageStudio")
 );
@@ -47,7 +47,7 @@ const DefaultLayout = ({ children }) => {
 
       <Suspense fallback={null}>
         <CropImageStudio />
-        {!shouldHideFloating && <FloatingActions />}
+
       </Suspense>
 
       <Sidebar />
