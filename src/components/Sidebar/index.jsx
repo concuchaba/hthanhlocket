@@ -29,8 +29,6 @@ import { useApp } from "@/context/AppContext";
 import { AuthContext } from "@/context/AuthLocket";
 import { MenuItem } from "./MenuItem";
 import { AuthButton } from "./AuthButton";
-import ThemeToggle from "./ThemeToggle";
-import PlanBadge from "../ui/PlanBadge/PlanBadge";
 import { SonnerError, SonnerSuccess } from "../ui/SonnerToast";
 import { clearAllData } from "@/utils/SyncData/clearAllData";
 import { logout } from "@/services";
@@ -80,7 +78,7 @@ const Sidebar = () => {
     },
     {
       title: "Tính năng",
-      badge: <PlanBadge />,
+
       items: [
         { to: "/postmoments", icon: Upload, text: "Đăng ảnh, video" },
         { to: "/locket-beta", icon: Smartphone, text: "Locket Camera", badge: "Beta" },
